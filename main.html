@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>메인 홈페이지</title>
+  <style>
+   :root {background-color: #FFEEBB;}
+    ul {
+	  background-color: #FFBB99;
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: auto;
+	  }
+	 li {
+	    float: left;
+		border-right: solid 2px white;
+		margin: 5px 0;
+		padding: 10px 20px;
+		}
+	 li a {
+	    text-decoration: none;
+		font-weight: bold;
+		}
+	 li:hover { 
+	        background-color: #EEAA33;
+			color: white;
+			}
+	 input {
+	    width: 100px;
+		padding: 10px 20px;
+		margin: 5px 0;
+		box-sizing: border-box;
+		}
+	input[type="text"] {
+	   border: solid 2px #D2691E;
+	   border-radius: 20px;
+	   }
+	input[type="password"] {
+	   border: solid 2px #D2691E;
+	   border-radius: 20px;
+	   }
+	li a.current {
+	   background-color: #FF6347;
+	   color: white;
+	   }
+	 div { 
+	   height: 100%;
+	   width: 100%;
+	   border: none;
+	   }
+	 p {
+	   color: navy;
+	   text-align: center;
+	   font-weight: bold;
+	   }
+  </style>
+ </head>
+ <body>
+ <h1 align="center">SYJ Main HOMEPAGE</h1>
+  <ul>
+   <li><a class="current" href="main.html" target="_blank">Main</a></li>
+   <li><a href="curriculum vitae.html" target="_blank">이력서</a></li>
+   <li><a href="register.html" target="_blank">회원가입</a></li>
+   <ul style="float:right; list-style-type:none;">
+	<form>
+    아이디
+	<input type="text" name="username">
+	비밀번호
+	<input type="password" name="password">
+	</form>
+   </ul>
+  </ul>
+  <div align="center"><img src="welcoming.jpg" alt="디딤돌" /></div>
+   <p>안녕하세요<br>모두가 평등하게 살아갈 수 있게 도와주는 디딤돌, SYJ입니다.</p>
+ </body>
+</html>
