@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>회원가입</title>
+  <style>
+    div {
+	    border: none;
+		width: 100%;
+		height: 25%;
+		overflow: auto;
+		float: left;
+		background-color: #FFDDBB;
+		border-radius: 5px;
+		color: navy;
+		font-weight: bold;
+		}
+	button {
+	   cursor:pointer
+	   width: 50%;
+	   height: 5%;
+	   background-color: gray;
+	   overflow: auto;
+	   }
+
+    ul {
+	  background-color: #FFBB99;
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: auto;
+	  }
+	 li {
+	    float: left;
+		border-right: solid 2px white;
+		margin: 5px 0;
+		padding: 10px 20px;
+		}
+	 li a {
+	    text-decoration: none;
+		font-weight: bold;
+		}
+	 li:hover { 
+	        background-color: #EEAA33;
+			color: white;
+			}
+	 input {
+	    width: 100px;
+		padding: 10px 20px;
+		margin: 5px 0;
+		box-sizing: border-box;
+		}
+	input[type="text"] {
+	   border: solid 2px #D2691E;
+	   border-radius: 10px;
+	   }
+	input[type="password"] {
+	   border: solid 2px #D2691E;
+	   border-radius: 10px;
+	   }
+	li a.current {
+	   background-color: #FF6347;
+	   color: white;
+  </style>
+ </head>
+ <body>
+ <h1 align="center">어서오세요</h1>
+  <ul>
+   <li><a href="main.html" target="_blank">Main</a></li>
+   <li><a href="curriculum vitae.html" target="_blank">이력서</a></li>
+   <li><a class="current" href="register.html" target="_blank">회원가입</a></li>
+   <ul style="float:right; list-style-type:none;">
+	<form>
+    아이디
+	<input type="text" name="username">
+	비밀번호
+	<input type="password" name="password">
+	</form>
+   </ul>
+ </ul>
+ <div>
+  <h3>회원가입 절차</h3>
+  <p>아이디를 입력해주세요.</p><input type="text">
+   <button>아이디 중복 확인</button><br>
+  <p>비밀번호를 입력해주세요.</p><input type="text">
+  <p>비밀번호 확인</p><input type="text">
+ </div>
+ </body>
+</html>
